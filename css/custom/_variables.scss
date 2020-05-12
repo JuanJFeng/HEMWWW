@@ -279,19 +279,6 @@ header {
 	}
 }
 
-
-// Mobile
-.mobile-display {
-	display: none !important;
-
-	@media only screen and (max-width: $mobile) {
-		display: inline-block !important;
-	}
-}
-
-.desktop-display {
-
-	@media only screen and (max-width: $mobile) {
-		display: none !important;
-	}
+.full-page-img {
+	width: 100%;
 }
