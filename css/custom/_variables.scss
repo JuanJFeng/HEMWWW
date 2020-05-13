@@ -57,7 +57,7 @@ html, body {
 body {
 	margin: auto !important;
 	max-width: $max-pagewidth;
-	overflow-x: hidden;
+	//overflow-x: hidden;
 }
 
 h1, p, a, strong {
@@ -280,5 +280,35 @@ header {
 }
 
 .full-page-img {
-	width: 100%;
+	width: 300px;
+	margin: 60px;
+}
+
+// free-dragscroll
+.dragscroll {
+    border: 1px solid rgb(31, 40, 49);
+    overflow: auto;
+}
+
+.free.dragscroll {
+    width: 100vw;
+    height: 100vh;
+}
+
+.free {
+    cursor : -webkit-grab;
+    cursor : -moz-grab;
+    cursor : -o-grab;
+    cursor : grab;
+}
+
+.free:active {
+    cursor : -webkit-grabbing;
+    cursor : -moz-grabbing;
+    cursor : -o-grabbing;
+    cursor : grabbing;
+}
+
+.canvas-free {
+	width: 200vw;
 }
