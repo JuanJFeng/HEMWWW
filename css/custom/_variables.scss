@@ -312,19 +312,19 @@ header {
 .canvas-free {
 	width: 200vw;
 	position: relative;
-	animation: wonky 2s infinite, hover 2s infinite;
+	animation: wonky 3s infinite, hover 3s infinite;
 	// transform: translate(-50vw, -50vh);
 }
 
 // Float-effect
 @keyframes wonky {
-	0% {transform: rotate(-0.5deg);}
-	50%	{transform: rotate(0.5deg);}
-	100% {transform: rotate(-0.5deg)}
+	0% {transform: rotate(-0.1deg);}
+	50%	{transform: rotate(0.1deg);}
+	100% {transform: rotate(-0.1deg)}
 }
 
 @keyframes hover {
-	0% {top: 5px;}
-	50%	{top: -5px;}
-	100%{top: 5px;}
+	0% {top: 2px;}
+	50%	{top: -2px;}
+	100%{top: 2px;}
 }
