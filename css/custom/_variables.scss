@@ -281,50 +281,5 @@ header {
 
 .full-page-img {
 	width: 300px;
-	margin: 60px;
 }
 
-// free-dragscroll
-.dragscroll {
-    //border: 1px solid black;
-    overflow: auto;
-}
-
-.free.dragscroll {
-    width: 100vw;
-    height: 100vh;
-}
-
-.free {
-    cursor : -webkit-grab;
-    cursor : -moz-grab;
-    cursor : -o-grab;
-    cursor : grab;
-}
-
-.free:active {
-    cursor : -webkit-grabbing;
-    cursor : -moz-grabbing;
-    cursor : -o-grabbing;
-    cursor : grabbing;
-}
-
-.canvas-free {
-	width: 200vw;
-	position: relative;
-	// animation: wonky 3s infinite, hover 3s infinite;
-	// transform: translate(-50vw, -50vh);
-}
-
-// Float-effect
-@keyframes wonky {
-	0% {transform: rotate(-0.1deg);}
-	50%	{transform: rotate(0.1deg);}
-	100% {transform: rotate(-0.1deg)}
-}
-
-@keyframes hover {
-	0% {top: 2px;}
-	50%	{top: -2px;}
-	100%{top: 2px;}
-}

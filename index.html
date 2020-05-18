@@ -5,16 +5,16 @@ layout: default
 <div class="container-article">
     <div class="article-title">
 
-        <div class="free dragscroll" id="index">
 
-            <div class="canvas-free" id="image1">
+
+
                 {% for image in site.static_files %}
                     {% if image.path contains 'homepage-desktop' %}
                         <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                     {% endif %}
                 {% endfor %}
-            </div>
-        </div>
+
+
 
     </div>
 </div>

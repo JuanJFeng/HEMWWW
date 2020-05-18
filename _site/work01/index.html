@@ -103,30 +103,5 @@
 	});
 </script>
 
-<!-- movebg-withmouse -->
-<script>
-$(document).ready(function($){
-            $("#index").mousemove(function(e){
-                var mouseX = e.pageX - $('#index').offset().left;
-                var mouseY = e.pageY - $('#index').offset().top;
-                var totalX = $('#index').width();
-                var totalY = $('#index').height();
-                var centerX = totalX / 2;
-                var centerY = totalY / 2;
-                var shiftX = centerX - mouseX;
-                var shiftY = centerY - mouseY;
-
-                var startX = ($('#index').width() / 2) - ($('#image1').width() / 2);
-                var startY = ($('#index').height() / 2) - ($('#image1').height() / 2);
-
-                $('#image1').css('z-index') ;
-                $('#image1').css({ 'left': startX + (shiftX/10) + 'px', 'top': startY + (shiftY/10) + 'px' });
-                $('#image2').css({ 'left': startX + 220 + (shiftX/8) + 'px', 'top': startY + 50 + (shiftY/8) + 'px' });
-                $('#image3').css({ 'left': startX + 370 + (shiftX/6) + 'px', 'top': startY + 60 + (shiftY/6) + 'px' });
-                $('#image4').css({ 'left': startX - 100 + (shiftX/8) + 'px', 'top': startY + 50 + (shiftY/8) + 'px' });
-                $('#image5').css({ 'left': startX - 150 + (shiftX/6) + 'px', 'top': startY + 60 + (shiftY/6) + 'px' });
-            });
-        });
-</script>
 </body>
 </html>
