@@ -68,79 +68,83 @@
 			<div class="container-article">
     <div class="article-title">
 
-        <div class="swiper-container">
+        <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
 
                 
                     
+                
+                    
+                
+                    
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/Against the sun.jpg" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/01-Against the sun.jpg" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/Boston Consulting group .png" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/02-Boston Consulting group .png" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/Disconnection:Giardina.png" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/03-brocca-02.png" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/Easter egg.JPG" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/04-corona.JPG" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/Google Home Content.png" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/05-Disconnection:Giardina.png" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/Milano City.PNG" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/06-Easter egg.JPG" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/Quarantine.jpg" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/07-Google Home Content.png" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/brocca-02.png" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/08-imagination.png" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/corona.JPG" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/09-Milano City.PNG" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/imagination.png" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/10-mindfulness.jpg" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/mindfulness.jpg" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/11-once upon a spring-05.png" alt="image" />
                         </div>
                     
                 
                     
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/once upon a spring-05.png" alt="image" />
+                            <img class="full-page-img" src="/CGWWW/assets/images/homepage-desktop/12-Quarantine.jpg" alt="image" />
                         </div>
                     
                 
@@ -172,7 +176,61 @@
             </div>
         </div>
 
+        <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
 
+                
+                    <div class="swiper-slide">
+                        <p>Against the sun</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Boston Consulting group</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Brocca</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Corona</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Disconnection</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Easter Egg</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Google Home Content</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Imagination</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Milano City</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Mindfulness</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Once upon a spring</p>
+                    </div>
+                
+                    <div class="swiper-slide">
+                        <p>Quarantine</p>
+                    </div>
+                
+                
+            </div>
+        </div>
 
     </div>
 </div>
@@ -211,28 +269,27 @@
 
 <!-- swiper slider -->
 <script>
-    var swiper = new Swiper('.swiper-container', {
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 1,
 		loop: true,
+		freeMode: true,
+		effect: 'fade',
+		fadeEffect: { crossFade: true },
+		speed: 20,
+		loopedSlides: 12, // looped slides should be the same!!!
+		watchSlidesVisibility: true, // slides that in viewport will have additional visible class
+		watchSlidesProgress: true, // enable the 'proress' property on each slide
+    });
+
+	var galleryTop = new Swiper('.gallery-top', {
+		loop:true,
 		freeMode: true,
 		mousewheel: true,
 		keyboard: true,
-		breakpoints: {
-			640: {
-			slidesPerView: 1,
-			spaceBetween: 300,
-			},
-			768: {
-			slidesPerView: 1,
-			spaceBetween: 200,
-			},
-			1024: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			},
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
+		loopedSlides: 12, // looped slides should be the same!!!
+		thumbs: {
+			swiper: galleryThumbs,
 		},
     });
 </script>

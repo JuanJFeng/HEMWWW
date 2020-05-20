@@ -1,7 +1,7 @@
 // typeface
 @font-face {
-	font-family: Arial, Helvetica, sans-serif;
-	src: url('../assets/fonts/xxxx.ttf'),
+	font-family: Eczar;
+	src: url('../assets/fonts/savate-regular.otf'),
 }
 
 // opentype features
@@ -21,15 +21,15 @@
 
 // variables-font
 $font-stack: Arial, sans-serif;
-$text-size: 22px;
-$text-size-mobile: 18px;
+$text-size: 17px;
+$text-size-mobile: 14px;
 
 // variables-grid
-$line-height: 26px; //unit of measure_height
+$line-height: 22px; //unit of measure_height
 $line-height-mobile: 23px; //unit of measure_height
 
 $max-pagewidth: 1800px;
-$max-textwidth: 710px;
+$max-textwidth: 100vw;
 
 $img-padding-desktop: 70px;
 $img-padding-mobile: 10px;
@@ -42,6 +42,7 @@ $tablet: 1024px;
 $text-color: #000000;
 $link-color-1: #000000;
 $link-color-2: #ffffff;
+$shadow-1: red;
 
 // root-element
 html, body {
@@ -281,7 +282,7 @@ header {
 
 // Homepage-slider
 .swiper-container {
-    width: auto;
+    width: 100vw;
     height: 100vh;
 	margin: 0 auto;
 	
@@ -311,6 +312,9 @@ header {
 .full-page-img {
 	height: 70vh;
 	margin: auto;
+	-moz-box-shadow: 0px 0px 50px 0px $shadow-1;
+	-webkit-box-shadow: 0px 0px 50px 0px $shadow-1;
+	box-shadow: 0px 0px 10px 0px $shadow-1, 0px 0px 50px 0px $shadow-1, 0px 0px 60px 0px yellow;
 
 	@media only screen and (max-width: $mobile) {
 		width: 80vw;
@@ -318,3 +322,21 @@ header {
 	}
 }
 
+.gallery-top {
+	z-index: 10 !important;
+}
+
+.gallery-thumbs {
+	position: absolute !important;
+	top: 0;
+
+	p {
+		background-color: white;
+		margin: 0 !important;
+		padding: 100px;
+		font-size: 100px !important;
+		line-height: 120px !important;
+		text-transform: uppercase;
+		font-family: Eczar;
+	}
+}

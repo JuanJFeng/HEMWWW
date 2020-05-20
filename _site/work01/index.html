@@ -105,28 +105,27 @@
 
 <!-- swiper slider -->
 <script>
-    var swiper = new Swiper('.swiper-container', {
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 1,
 		loop: true,
+		freeMode: true,
+		effect: 'fade',
+		fadeEffect: { crossFade: true },
+		speed: 20,
+		loopedSlides: 12, // looped slides should be the same!!!
+		watchSlidesVisibility: true, // slides that in viewport will have additional visible class
+		watchSlidesProgress: true, // enable the 'proress' property on each slide
+    });
+
+	var galleryTop = new Swiper('.gallery-top', {
+		loop:true,
 		freeMode: true,
 		mousewheel: true,
 		keyboard: true,
-		breakpoints: {
-			640: {
-			slidesPerView: 1,
-			spaceBetween: 300,
-			},
-			768: {
-			slidesPerView: 1,
-			spaceBetween: 200,
-			},
-			1024: {
-			slidesPerView: 1,
-			spaceBetween: 0,
-			},
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
+		loopedSlides: 12, // looped slides should be the same!!!
+		thumbs: {
+			swiper: galleryThumbs,
 		},
     });
 </script>
