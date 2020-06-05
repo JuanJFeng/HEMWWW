@@ -21,7 +21,7 @@
 
 // variables-font
 $font-stack: Arial, sans-serif;
-$text-size: 17px;
+$text-size: 18px;
 $text-size-mobile: 14px;
 
 // variables-grid
@@ -322,7 +322,7 @@ header {
 	}
 }
 
-.gallery-top {
+.gallery-top, .gallery-top2 {
 	z-index: 10 !important;
 }
 
@@ -340,4 +340,9 @@ header {
 		font-family: Eczar;
 		color: black;
 	}
+}
+
+// Works
+.swiper-slide.works {
+	margin-bottom: 20vh;;
 }

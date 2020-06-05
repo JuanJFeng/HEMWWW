@@ -7,6 +7,31 @@ layout: default
 </div>
 
 <div class="container-article">
+    <div class="swiper-container gallery-top2">
+        <div class="swiper-wrapper">
+
+            {% for image in site.static_files %}
+                {% if image.path contains 'work01' %}
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div>
+                {% endif %}
+            {% endfor %}
+        
+        </div>
+    </div>
+
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+
+            {% for member in site.data.work01 %}
+                <div class="swiper-slide">
+                    <p>{{ member.name }}</p>
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
 
 </div>
 

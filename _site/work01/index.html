@@ -70,6 +70,167 @@
 </div>
 
 <div class="container-article">
+    <div class="swiper-container gallery-top2">
+        <div class="swiper-wrapper">
+
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-01-left.png" alt="image" />
+                    </div>
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-02-right.png" alt="image" />
+                    </div>
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-03-left.png" alt="image" />
+                    </div>
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-04-right.png" alt="image" />
+                    </div>
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-05-left.png" alt="image" />
+                    </div>
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-06-right.png" alt="image" />
+                    </div>
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-07-left.png" alt="image" />
+                    </div>
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-08-right.png" alt="image" />
+                    </div>
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-09-left.png" alt="image" />
+                    </div>
+                
+            
+                
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="/CGWWW/assets/images/work01/1-10-right.png" alt="image" />
+                    </div>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        </div>
+    </div>
+
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+
+            
+                <div class="swiper-slide">
+                    <p>Blooming future</p>
+                </div>
+            
+                <div class="swiper-slide">
+                    <p>My last work for @bcginitaly represents the end of a cycle and the beginning of a new fresh and colorful one.</p>
+                </div>
+            
+                <div class="swiper-slide">
+                    <p>Like the eternal cycle between sunrise and sunset, two pragmatic lovers represented by the same element, the great Sun, that meanwhile they’re trying to catch themselves, they gives life to us and everything we know, we knew and we will know.</p>
+                </div>
+            
+                <div class="swiper-slide">
+                    <p>But now is not matter of the nature anymore, is matter of us, our hands and our brain.</p>
+                </div>
+            
+                <div class="swiper-slide">
+                    <p>I hope that our future will be the blooming future we’re all hoping.</p>
+                </div>
+            
+            
+        </div>
+    </div>
 
 </div>
 
@@ -120,6 +281,17 @@
 
 	var galleryTop = new Swiper('.gallery-top', {
 		loop:true,
+		freeMode: true,
+		mousewheel: true,
+		keyboard: true,
+		loopedSlides: 12, // looped slides should be the same!!!
+		thumbs: {
+			swiper: galleryThumbs,
+		},
+    });
+
+	var galleryTop = new Swiper('.gallery-top2', {
+		direction: 'vertical',
 		freeMode: true,
 		mousewheel: true,
 		keyboard: true,

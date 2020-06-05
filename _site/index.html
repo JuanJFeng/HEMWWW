@@ -186,6 +186,26 @@
                 
                     
                 
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
             
             </div>
         </div>
@@ -298,6 +318,17 @@
 
 	var galleryTop = new Swiper('.gallery-top', {
 		loop:true,
+		freeMode: true,
+		mousewheel: true,
+		keyboard: true,
+		loopedSlides: 12, // looped slides should be the same!!!
+		thumbs: {
+			swiper: galleryThumbs,
+		},
+    });
+
+	var galleryTop = new Swiper('.gallery-top2', {
+		direction: 'vertical',
 		freeMode: true,
 		mousewheel: true,
 		keyboard: true,
