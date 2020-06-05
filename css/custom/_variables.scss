@@ -1,7 +1,7 @@
 // typeface
 @font-face {
 	font-family: Eczar;
-	src: url('../assets/fonts/savate-regular.otf'),
+	src: url('../assets/fonts/ZangeziSans07_TRIAL-Regular.otf'),
 }
 
 // opentype features
@@ -312,9 +312,9 @@ header {
 .full-page-img {
 	height: 70vh;
 	margin: auto;
-	-moz-box-shadow: 0px 0px 50px 0px $shadow-1;
-	-webkit-box-shadow: 0px 0px 50px 0px $shadow-1;
-	box-shadow: 0px 0px 10px 0px $shadow-1, 0px 0px 50px 0px $shadow-1, 0px 0px 60px 0px yellow;
+	//-moz-box-shadow: 0px 0px 50px 0px $shadow-1;
+	//-webkit-box-shadow: 0px 0px 50px 0px $shadow-1;
+	//box-shadow: 0px 0px 10px 0px $shadow-1, 0px 0px 50px 0px $shadow-1, 0px 0px 60px 0px yellow;
 
 	@media only screen and (max-width: $mobile) {
 		width: 80vw;
@@ -334,9 +334,10 @@ header {
 		background-color: white;
 		margin: 0 !important;
 		padding: 100px;
-		font-size: 100px !important;
+		font-size: 120px !important;
 		line-height: 120px !important;
-		text-transform: uppercase;
+		//text-transform: uppercase;
 		font-family: Eczar;
+		color: black;
 	}
 }
