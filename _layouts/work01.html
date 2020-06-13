@@ -6,9 +6,9 @@ layout: default
 
 </div>
 
-<div class="container-article">
-    <div class="swiper-container gallery-top2">
-        <div class="swiper-wrapper">
+<div class="container-article works">
+    <div class="swiper-container gallery-top2" id="fade-img">
+        <div class="swiper-wrapper works" id="trans-bottom">
 
             {% for image in site.static_files %}
                 {% if image.path contains 'work01' %}
@@ -21,12 +21,13 @@ layout: default
         </div>
     </div>
 
-    <div class="swiper-container gallery-thumbs">
-        <div class="swiper-wrapper">
+    <div class="swiper-container gallery-thumbs" id="fade-title">
+        <div class="swiper-wrapper works" id="trans-top">
 
             {% for member in site.data.work01 %}
                 <div class="swiper-slide">
-                    <p>{{ member.name }}</p>
+                    <p class="title">{{ member.title }}</p>
+                    <p class="testo">{{ member.testo }}</p>
                 </div>
             {% endfor %}
             

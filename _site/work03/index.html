@@ -32,7 +32,9 @@
 
         <div class="nav-right">
             <div class="dropdown">
-                <p>Works</p>
+                <p>About</p>
+
+                <!-- 
                 <div class="dropdown-content right-side"> 
                     <br>
                     
@@ -54,10 +56,17 @@
                             </div>
                         
                     
+                        
+                            <div>
+                                <a href="/CGWWW/work04/">Work-03</a>
+                            </div>
+                        
+                    
                 </div>
+                -->
+                
             </div>
         </div>
-
     </div>
 </nav>
 
@@ -93,6 +102,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="/CGWWW/assets/js/swiper.min.js"></script>
 
 <!-- viewport units on mobile -->
@@ -139,6 +149,31 @@
 			swiper: galleryThumbs,
 		},
     });
+</script>
+
+<!-- click fadeout -->
+<script>
+	$(function() {
+		$('.close-fade a').click(function(e) {
+			e.preventDefault();
+			var destination = this.href;
+			$('.close-fade').fadeOut(700, function() {
+				window.location = destination;
+			});
+			$('.title').delay(400).fadeOut(300, function() {
+				window.location = destination;
+			});
+		});
+		return false;
+	});
+</script>
+
+<!-- load fadein -->
+<script>
+	$("#fade-title").delay(0).animate({"opacity": "1"}, 700);
+	$("#fade-img").delay(400).animate({"opacity": "1"}, 700);
+	$("#trans-top").delay(400).animate({top: '-10vh'}, 1000);
+	$("#trans-bottom").delay(400).animate({top: '45vh'}, 1000);
 </script>
 
 <!-- smooth scroll 

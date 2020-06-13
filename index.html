@@ -7,11 +7,17 @@ layout: default
 
         <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
-
-                {% for image in site.static_files %}
-                    {% if image.path contains 'homepage-desktop' %}
+                
+                {% for process-post in site.categories.post %}
+                    {% if process-post.type contains "post" %}
                         <div class="swiper-slide">
-                            <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                           
+                            <div class="close-fade">
+                                <a href="{{site.baseurl}}{{process-post.url}}">
+                                    <img class="full-page-img" src="{{site.baseurl}}/img/{{process-post.image}}" alt="image" />
+                                </a>
+                            </div>
+                           
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -23,9 +29,9 @@ layout: default
             <div class="swiper-wrapper">
 
                 {% for member in site.data.members %}
-                    <div class="swiper-slide">
-                        <p>{{ member.name }}</p>
-                    </div>
+                        <div class="swiper-slide {% if member.tag == 'black' %}white{% endif %}">
+                            <p class="title {% if member.tag == 'black' %}white{% endif %}">{{ member.title }}</p>
+                        </div>
                 {% endfor %}
                 
             </div>

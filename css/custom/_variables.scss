@@ -331,18 +331,40 @@ header {
 	top: 0;
 
 	p {
-		background-color: white;
+		//background-color: white;
 		margin: 0 !important;
-		padding: 100px;
-		font-size: 120px !important;
-		line-height: 120px !important;
+		//padding: 100px;
 		//text-transform: uppercase;
 		font-family: Eczar;
 		color: black;
 	}
+
+	.title {
+		font-size: 100px !important;
+		line-height: 120px !important;
+	}
+	
+	.testo {
+		font-size: 50px !important;
+		line-height: 60px !important;
+		max-width: 70%;
+	}
+}
+
+.swiper-slide.white {
+	background-color: #000000;
+}
+
+.title.white {
+	color: white;
 }
 
 // Works
 .swiper-slide.works {
 	margin-bottom: 20vh;;
 }
+
+#fade-img, #fade-title {
+	opacity: 0;
+}
+
