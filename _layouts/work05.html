@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="nav-sotto">
+
+</div>
+
+<div class="container-article works">
+    <div class="swiper-container gallery-top2" id="fade-img">
+        <div class="swiper-wrapper works" id="trans-bottom">
+
+            {% for image in site.static_files %}
+                {% if image.path contains 'work01' %}
+                    <div class="swiper-slide works">
+                        <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                    </div>
+                {% endif %}
+            {% endfor %}
+        
+        </div>
+    </div>
+
+    <div class="swiper-container gallery-thumbs" id="fade-title">
+        <div class="swiper-wrapper works" id="trans-top">
+
+            {% for member in site.data.work05 %}
+                <div class="swiper-slide">
+                    <p class="title">{{ member.title }}</p>
+                    <p class="testo">{{ member.testo }}</p>
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+
+</div>
+
