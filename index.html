@@ -4,38 +4,75 @@ layout: default
 
 <div class="container-article">
     <div class="article-title">
+        
+        <div class="desktop-display">           
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
 
-        <div class="swiper-container gallery-top">
-            <div class="swiper-wrapper">
+                    {% for image in site.static_files %}
+                        {% if image.path contains 'homepage-desktop' %}
+                            {% if image.basename contains 'white' %}
+                                <div class="swiper-slide">
+                                    <div class="container-img" data-bg="light">
+                                        <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>                              
+                                </div>
+                            {% endif %}
+
+                            {% if image.basename contains 'black' %}
+                                <div class="swiper-slide">
+                                    <div class="container-img" data-bg="dark">
+                                        <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>                               
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+
+                <!-- Add Pagination 
+                <div class="swiper-pagination desktop"></div>
+                -->
                 
-                {% for process-post in site.categories.post %}
-                    {% if process-post.type contains "post" %}
-                        <div class="swiper-slide">
-                           
-                            <div class="close-fade">
-                                <a href="{{site.baseurl}}{{process-post.url}}">
-                                    <img class="full-page-img" src="{{site.baseurl}}/img/{{process-post.image}}" alt="image" />
-                                </a>
-                            </div>
-                           
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            
             </div>
         </div>
 
-        <div class="swiper-container gallery-thumbs">
-            <div class="swiper-wrapper">
+        <div class="mobile-display">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
 
-                {% for member in site.data.members %}
-                        <div class="swiper-slide {% if member.tag == 'black' %}white{% endif %}">
-                            <p class="title {% if member.tag == 'black' %}white{% endif %}">{{ member.title }}</p>
-                        </div>
-                {% endfor %}
-                
+                    {% for image in site.static_files %}
+                        {% if image.path contains 'homepage-mobile' %}
+                                <div class="swiper-slide">
+                                    <div class="container-img">
+                                        <img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>                              
+                                </div>
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+
+                <!-- Add Pagination 
+                <div class="swiper-pagination mobile"></div>
+                -->
+               
             </div>
         </div>
+
     </div>
 </div>
 

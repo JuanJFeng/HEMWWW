@@ -1,6 +1,6 @@
 # Site Settings
-baseurl: /HEMWWW
-url: ""
+baseurl: ""
+url: "https://alessiokeilty.com/"
 exclude: ['README.md']
 
 # Sass/SCSS
