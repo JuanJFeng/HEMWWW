@@ -1,5 +1,5 @@
 # Site Settings
-baseurl: "/HEMWWW"
+baseurl: /HEMWWW
 url: ""
 exclude: ['README.md']
 
