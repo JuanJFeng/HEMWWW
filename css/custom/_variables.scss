@@ -195,6 +195,20 @@ header {
 		}
 	}
 
+	.nav-middle {
+		position: fixed;
+		left: 40%;
+		width: 20%;
+		text-align: center;
+
+		a {
+			color: #fff;
+			width: auto;
+			float: initial;
+		}
+
+	}
+
 	.nav-right {
 		display: inline-block;
 		width: 50%;
@@ -511,4 +525,8 @@ header {
 	@media only screen and (min-width: $mobile) {
 		display: block !important;
 	}
+}
+
+.info-active {
+	display: none;
 }
