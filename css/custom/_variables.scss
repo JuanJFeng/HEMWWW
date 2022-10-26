@@ -48,6 +48,7 @@ html, body {
 	font-family: $font-stack !important;
 	font-kerning: normal;
 	word-spacing: 0.001em;
+	background: #fff;
 
 	@media only screen and (max-width: $mobile) {
 		height: 100%;
@@ -170,6 +171,8 @@ header {
 
 // navigation
 .nav {
+	color: white !important;
+	mix-blend-mode: exclusion;
 	display: block !important;
 
 	@media only screen and (max-width: $mobile) {
@@ -186,6 +189,7 @@ header {
 		float: left;
 
 		a {
+			color: #fff;
 			width: max-content;
 			float: initial;
 		}
@@ -195,10 +199,9 @@ header {
 		display: inline-block;
 		width: 50%;
 		text-align: right;
-		color: white !important;
-		mix-blend-mode: exclusion;
 
 		a {
+			color: #fff;
 			width: auto;
 			float: initial;
 		}
@@ -438,6 +441,7 @@ header {
     top: 0;
     left: 0;
 	right: 0;
+	mix-blend-mode: exclusion;
 	z-index: 100;
 }
   
