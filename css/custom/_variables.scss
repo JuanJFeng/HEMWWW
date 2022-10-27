@@ -23,6 +23,8 @@
 $font-stack: Helvetica, sans-serif;
 $text-size: 15px;
 $text-size-mobile: 17px;
+$logo-size: 20px;
+
 
 // variables-grid
 $line-height: 15px; //unit of measure_height
@@ -202,6 +204,7 @@ header {
 		text-align: center;
 
 		a {
+			font-size: $logo-size !important;
 			color: #fff;
 			width: auto;
 			float: initial;
