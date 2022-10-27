@@ -66,7 +66,7 @@ body {
 	//overflow-x: hidden;
 }
 
-h1, p, a, strong {
+h1, p, a, strong, span {
 	font-size: $text-size !important;
 	// font-weight: normal !important;
 	// color: $text-color;
@@ -527,20 +527,44 @@ header {
 	}
 }
 
-.info-active {
+// .info-active {
+// 	width: 100%;
+//     height: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 20;
+//     background-color: #fff;
+// 	transition: transform .6s cubic-bezier(.77,0,.175,1);
+//     display: none;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     padding: 90px;
+//     overflow-y: scroll;
+// }
+
+.info_overlay {
+	height: 0;
 	width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 20;
-    background-color: #fff;
-	transition: transform .6s cubic-bezier(.77,0,.175,1);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 90px;
-    overflow-y: scroll;
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	background-color: #B1FFAD;
+	overflow-x: hidden;
+	transition: .6s cubic-bezier(.77,0,.175,1);
+
+	.overlay-content {
+		padding: 100px;
+	}
+}
+
+.closebtn {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	top: 50pt;
+    position: absolute;
 }
 
 #header-info {

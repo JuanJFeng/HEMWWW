@@ -5,15 +5,19 @@ layout: default
 <div class="container-article">
     <div class="article-title">
         {% include nav.html navclass='nav-top' %}
-        <div class="info-active">
-            <p>
-                <span>
-                    ABC
-                </span>
-            </p>
 
+        <!-- Full screen overlay "About" -->
+        <div id="myNav" class="info_overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <!-- &times; -->
+            </a>
+            <div class="overlay-content">
+                <p>La NASA acronimo di National Aeronautics and Space Administration (in italiano: "Ente Nazionale per le attività Spaziali e Aeronautiche"), è l'agenzia governativa civile responsabile del programma spaziale e della ricerca aerospaziale degli Stati Uniti d'America.</p>
+            </div>
+            
         </div>
-        
+
+        <!-- Swiper gallery -->
         <div class="desktop-display">           
             <div class="swiper-container">
                 <div class="swiper-wrapper">

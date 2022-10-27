@@ -79,13 +79,22 @@
 </script>
 -->
 
-
-<!-- Hideen element -->
 <script>
 	var elems = document.getElementsByClassName("show-more");
 	Array.from(elems).forEach(v => v.addEventListener('click', function() {
 	  	this.parentElement.getElementsByClassName('content-bg')[0].classList.toggle('hidden-bg');
 	}));
+</script>
+
+<!-- Full screen overlay "About" -->
+<script>
+	function openNav() {
+	  document.getElementById("myNav").style.height = "100%";
+	}
+	
+	function closeNav() {
+	  document.getElementById("myNav").style.height = "0%";
+	}
 </script>
 
 </body>
